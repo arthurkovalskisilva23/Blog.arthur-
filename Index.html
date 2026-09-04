@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Meu blog</h1>
+    <main>
+        <article>
+            <img src="" alt="logotipo conceitual de tecnologia">
+            <div>
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: </p>
+                <p>Boas vindas ao meu novo blog</p>
+                <button>👍 <span></span><span></span></button>
+                <button>👎 <span></span><span></span></button>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach(function (botao){
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado(){
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false){
+
+                }
+                texto.textContent++;
+            }
+        });
+    </script>
+</body>
+
+</html>
