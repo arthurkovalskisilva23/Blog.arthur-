@@ -4,41 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Gearhead Garage | Blog de Performance Automotiva</title>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Meu blog</h1>
+    <header>
+        <h1>Gearhead <span>Garage</span></h1>
+        <p>Alta performance, reprogramação e tuning de esportivos modernos</p>
+    </header>
+
     <main>
         <article>
-            <img src="" alt="logotipo conceitual de tecnologia">
-            <div>
-                <h2>Meu primeiro post</h2>
-                <p class="artigo-autor">Por: </p>
-                <p>Boas vindas ao meu novo blog</p>
-                <button>👍 <span></span><span></span></button>
-                <button>👎 <span></span><span></span></button>
+            
+            <div class="artigo-banner">
+                <img src="civic.png" alt="Honda Civic Si 2008 vs Volkswagen Golf GTI MK7">
+                <span class="categoria-tag">Stage 3 / Trackday</span>
+            </div>
+            
+            <div class="artigo-conteudo">
+                <h2>Golf GTI MK7 vs Civic SI: O Guia Definitivo de Upgrades</h2>
+                <p class="artigo-autor">Por: Arthur rogerio "TKZ" </p>
+                
+                <p>Seja bem-vindo ao novo portal da cultura modificada! Hoje vamos analisar os limites de duas das plataformas de tração dianteira mais cobiçadas do mercado moderno: o icônico <strong>Volkswagen Golf GTI (EA888)</strong> e o purista <strong>Honda Civic SI (K20z3)</strong>.</p>
+                
+                <p>Ambos os carros respondem incrivelmente bem a modificações eletrônicas e mecânicas, mas entregam a potência de formas completamente distintas. Enquanto o GTI extrai torque massivo logo em baixas rotações, o Civic SI brilha pela agilidade dinâmica e estabilidade em curvas de alta.</p>
+
+                <div class="modificacoes-lista">
+                    <h3>🛠️ Setup Recomendado para o Setup "Stage 2":</h3>
+                    <ul>
+                        <li><strong>Remap de ECU & TCU:</strong> Acerto customizado de motor e calibração de câmbio (DSG ou manual).</li>
+                        <li><strong>Sistema de Exaustão:</strong> Downpipe de alta vazão em inox para melhor liberação de gases do turbo.</li>
+                        <li><strong>Intake R600 / Filtro Esportivo:</strong> Admissão de ar frio maximizada para resfriamento constante.</li>
+                        <li><strong>Intercooler Upgraded:</strong> Item obrigatório no Brasil para evitar perda de potência por calor (Heat Soak).</li>
+                    </ul>
+                </div>
+
+                <p>Com esse conjunto básico, o Golf GTI salta facilmente dos 230cv originais para a casa dos <strong>320cv de roda</strong>, transformando o hot hatch em um verdadeiro monstro de estradas e pistas.</p>
+                
+                
+                <div class="botoes-reacao">
+                    <button class="btn-like">👍 <span>142</span></button>
+                    <button class="btn-dislike">👎 <span>12</span></button>
+                </div>
             </div>
         </article>
     </main>
 
-    <script>
-        const botoes = document.querySelectorAll("button");
+    <footer>
+        <p>&copy; 2026 Gearhead Garage. Criado para apaixonados por velocidade.</p>
+    </footer>
 
-        botoes.forEach(function (botao){
-            let curtiu = false;
-            botao.addEventListener("click", botaoClicado);
-            function botaoClicado(){
-                console.log("fui clicado");
-                let texto = botao.querySelector("span");
-                if (curtiu === false){
-
-                }
-                texto.textContent++;
-            }
-        });
-    </script>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>
